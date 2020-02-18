@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXAggregateTarget section */
@@ -19,12 +19,22 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		4D6322AE2F2F1A2126AA0180179CAAA6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		520BD36C9F14686AB094453DC0140414 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		A342C6C77C793D98464DB66D657DFD1D /* Pods-ScanPluginIntegrationApp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 81FD70ADC7B7DFE71D014A74F39FB3E6 /* Pods-ScanPluginIntegrationApp-dummy.m */; };
-		AA212F282E9F6B52E27F6C668588F465 /* Pods-ScanPluginIntegrationApp-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B303E561E7954068D0335BA1569B0F4E /* Pods-ScanPluginIntegrationApp-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		74CE1055027EB97D4EF540F54FA6816D /* Pods-ScanditScanPlugin-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DC5799926B4E1A1EC45407D4FE3D9746 /* Pods-ScanditScanPlugin-dummy.m */; };
+		A342C6C77C793D98464DB66D657DFD1D /* Pods-ScanPluginIntegrationApp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 11D2CA61B7FA5713B62ADF5829DF17E4 /* Pods-ScanPluginIntegrationApp-dummy.m */; };
+		AA212F282E9F6B52E27F6C668588F465 /* Pods-ScanPluginIntegrationApp-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E3DF700A220FFE698CF22D6DF5CCE9A9 /* Pods-ScanPluginIntegrationApp-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ACBE5988BBE8B5B36509D433F56F47B0 /* Pods-ScanditScanPlugin-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A971BF1233D4029B541B085661BB4D0D /* Pods-ScanditScanPlugin-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		1C5DD2BEC10F3B1387CAB440D8B2D8EA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0EC587CF615156B5AAA458C3E5404B39;
+			remoteInfo = "sonect-shop-sdk-ios";
+		};
 		CC28E357D600158BA620E4208582DD5F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
@@ -35,20 +45,29 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0B35313D41F94E430388F1E5FFABC68E /* Pods-ScanPluginIntegrationApp-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ScanPluginIntegrationApp-Info.plist"; sourceTree = "<group>"; };
 		0D7C20478B4DFBC1FAA607FCBDD43C60 /* sonect-shop-sdk-ios.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "sonect-shop-sdk-ios.xcconfig"; sourceTree = "<group>"; };
+		11D2CA61B7FA5713B62ADF5829DF17E4 /* Pods-ScanPluginIntegrationApp-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ScanPluginIntegrationApp-dummy.m"; sourceTree = "<group>"; };
+		226C77882F43C44B2D643316EC9FA942 /* Pods-ScanPluginIntegrationApp-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ScanPluginIntegrationApp-frameworks.sh"; sourceTree = "<group>"; };
 		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		3FB152392C586F3FFE69F48EC23EB7D4 /* Pods-ScanPluginIntegrationApp.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ScanPluginIntegrationApp.modulemap"; sourceTree = "<group>"; };
-		5D87CCE105BD0E467D51C323F53A6C4D /* Pods-ScanPluginIntegrationApp-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ScanPluginIntegrationApp-acknowledgements.plist"; sourceTree = "<group>"; };
-		81FD70ADC7B7DFE71D014A74F39FB3E6 /* Pods-ScanPluginIntegrationApp-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ScanPluginIntegrationApp-dummy.m"; sourceTree = "<group>"; };
-		87143B65DE9A76C610A4387531BA961C /* Pods-ScanPluginIntegrationApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ScanPluginIntegrationApp.release.xcconfig"; sourceTree = "<group>"; };
-		8C04FFB42AFA2BBED31B3124E1EC99B8 /* Pods-ScanPluginIntegrationApp-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ScanPluginIntegrationApp-acknowledgements.markdown"; sourceTree = "<group>"; };
+		6888A7A59F6B1D44CC4B159D06C8CFF8 /* Pods-ScanPluginIntegrationApp-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ScanPluginIntegrationApp-Info.plist"; sourceTree = "<group>"; };
+		6A5A63EC5B489B01C9E55E05EB0C3E2E /* Pods-ScanPluginIntegrationApp.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ScanPluginIntegrationApp.modulemap"; sourceTree = "<group>"; };
+		6B7BB9A340E2E36B3FCEFDBA40C72F16 /* Pods-ScanditScanPlugin-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ScanditScanPlugin-Info.plist"; sourceTree = "<group>"; };
+		7344A6F1BA12800A78234A7F95DEEC35 /* Pods-ScanditScanPlugin.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ScanditScanPlugin.modulemap"; sourceTree = "<group>"; };
+		7A6E3E6D723B942DBACAFF5A06711B75 /* Pods-ScanditScanPlugin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ScanditScanPlugin.debug.xcconfig"; sourceTree = "<group>"; };
+		7D74CB6A4AD09E966745B71FB7033282 /* Pods_ScanditScanPlugin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ScanditScanPlugin.framework; path = "Pods-ScanditScanPlugin.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9146C8C87C430BC8FB2DDFB99837E890 /* Pods-ScanPluginIntegrationApp-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ScanPluginIntegrationApp-acknowledgements.plist"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		AC884C9670F8CCDFC775DC550C16303D /* Pods-ScanPluginIntegrationApp-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ScanPluginIntegrationApp-frameworks.sh"; sourceTree = "<group>"; };
+		A659A469575EEB2D517030A58BC1B0EA /* Pods-ScanditScanPlugin-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ScanditScanPlugin-acknowledgements.markdown"; sourceTree = "<group>"; };
+		A971BF1233D4029B541B085661BB4D0D /* Pods-ScanditScanPlugin-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ScanditScanPlugin-umbrella.h"; sourceTree = "<group>"; };
 		AD44F35869816163D3A90A87D2AE5C7E /* SonectShop.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SonectShop.framework; sourceTree = "<group>"; };
-		B303E561E7954068D0335BA1569B0F4E /* Pods-ScanPluginIntegrationApp-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ScanPluginIntegrationApp-umbrella.h"; sourceTree = "<group>"; };
+		B389E5959D5F16E027B7D6D9DF692E74 /* Pods-ScanPluginIntegrationApp-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ScanPluginIntegrationApp-acknowledgements.markdown"; sourceTree = "<group>"; };
+		BAB0E33BCF0D32F1314747FDBBC611BD /* Pods-ScanditScanPlugin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ScanditScanPlugin.release.xcconfig"; sourceTree = "<group>"; };
+		CF60C1691E314941A006AB1321DC963A /* Pods-ScanditScanPlugin-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ScanditScanPlugin-acknowledgements.plist"; sourceTree = "<group>"; };
+		DC5799926B4E1A1EC45407D4FE3D9746 /* Pods-ScanditScanPlugin-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ScanditScanPlugin-dummy.m"; sourceTree = "<group>"; };
+		E04ABC99ECD6E4BB8FA316FF45CA6579 /* Pods-ScanPluginIntegrationApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ScanPluginIntegrationApp.release.xcconfig"; sourceTree = "<group>"; };
 		E1465CCA87DB82F620E211DE12F1AC70 /* Pods_ScanPluginIntegrationApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ScanPluginIntegrationApp.framework; path = "Pods-ScanPluginIntegrationApp.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		E4464A1DEF7AD368D79C713063F65B0C /* Pods-ScanPluginIntegrationApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ScanPluginIntegrationApp.debug.xcconfig"; sourceTree = "<group>"; };
+		E3DF700A220FFE698CF22D6DF5CCE9A9 /* Pods-ScanPluginIntegrationApp-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ScanPluginIntegrationApp-umbrella.h"; sourceTree = "<group>"; };
+		F2A44C8AAFBF7114E2007010DCDD86F8 /* Pods-ScanPluginIntegrationApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ScanPluginIntegrationApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,32 +79,48 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CD010DD6F1093D2EAA03BE2A56E6412A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D6322AE2F2F1A2126AA0180179CAAA6 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		03859240C5E014FF890472B6A0AAE62D /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				0732E1F815E7668FB80AC5C2C09FCDCD /* Pods-ScanditScanPlugin */,
+				8FE5BD881C18AC36D3EEF6FDC972CCCD /* Pods-ScanPluginIntegrationApp */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		0732E1F815E7668FB80AC5C2C09FCDCD /* Pods-ScanditScanPlugin */ = {
+			isa = PBXGroup;
+			children = (
+				7344A6F1BA12800A78234A7F95DEEC35 /* Pods-ScanditScanPlugin.modulemap */,
+				A659A469575EEB2D517030A58BC1B0EA /* Pods-ScanditScanPlugin-acknowledgements.markdown */,
+				CF60C1691E314941A006AB1321DC963A /* Pods-ScanditScanPlugin-acknowledgements.plist */,
+				DC5799926B4E1A1EC45407D4FE3D9746 /* Pods-ScanditScanPlugin-dummy.m */,
+				6B7BB9A340E2E36B3FCEFDBA40C72F16 /* Pods-ScanditScanPlugin-Info.plist */,
+				A971BF1233D4029B541B085661BB4D0D /* Pods-ScanditScanPlugin-umbrella.h */,
+				7A6E3E6D723B942DBACAFF5A06711B75 /* Pods-ScanditScanPlugin.debug.xcconfig */,
+				BAB0E33BCF0D32F1314747FDBBC611BD /* Pods-ScanditScanPlugin.release.xcconfig */,
+			);
+			name = "Pods-ScanditScanPlugin";
+			path = "Target Support Files/Pods-ScanditScanPlugin";
+			sourceTree = "<group>";
+		};
 		47981D395C109673ED2C7366E83AF847 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				AD44F35869816163D3A90A87D2AE5C7E /* SonectShop.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		6BF105692D6B6A70557C5490382AB671 /* Pods-ScanPluginIntegrationApp */ = {
-			isa = PBXGroup;
-			children = (
-				3FB152392C586F3FFE69F48EC23EB7D4 /* Pods-ScanPluginIntegrationApp.modulemap */,
-				8C04FFB42AFA2BBED31B3124E1EC99B8 /* Pods-ScanPluginIntegrationApp-acknowledgements.markdown */,
-				5D87CCE105BD0E467D51C323F53A6C4D /* Pods-ScanPluginIntegrationApp-acknowledgements.plist */,
-				81FD70ADC7B7DFE71D014A74F39FB3E6 /* Pods-ScanPluginIntegrationApp-dummy.m */,
-				AC884C9670F8CCDFC775DC550C16303D /* Pods-ScanPluginIntegrationApp-frameworks.sh */,
-				0B35313D41F94E430388F1E5FFABC68E /* Pods-ScanPluginIntegrationApp-Info.plist */,
-				B303E561E7954068D0335BA1569B0F4E /* Pods-ScanPluginIntegrationApp-umbrella.h */,
-				E4464A1DEF7AD368D79C713063F65B0C /* Pods-ScanPluginIntegrationApp.debug.xcconfig */,
-				87143B65DE9A76C610A4387531BA961C /* Pods-ScanPluginIntegrationApp.release.xcconfig */,
-			);
-			name = "Pods-ScanPluginIntegrationApp";
-			path = "Target Support Files/Pods-ScanPluginIntegrationApp";
 			sourceTree = "<group>";
 		};
 		6DB5E82A06326DF58A8BC37DD55F41ED /* Support Files */ = {
@@ -115,12 +150,21 @@
 			path = "sonect-shop-sdk-ios";
 			sourceTree = "<group>";
 		};
-		7B64A08AC75C12C6AD0D507C8D1BD3DA /* Targets Support Files */ = {
+		8FE5BD881C18AC36D3EEF6FDC972CCCD /* Pods-ScanPluginIntegrationApp */ = {
 			isa = PBXGroup;
 			children = (
-				6BF105692D6B6A70557C5490382AB671 /* Pods-ScanPluginIntegrationApp */,
+				6A5A63EC5B489B01C9E55E05EB0C3E2E /* Pods-ScanPluginIntegrationApp.modulemap */,
+				B389E5959D5F16E027B7D6D9DF692E74 /* Pods-ScanPluginIntegrationApp-acknowledgements.markdown */,
+				9146C8C87C430BC8FB2DDFB99837E890 /* Pods-ScanPluginIntegrationApp-acknowledgements.plist */,
+				11D2CA61B7FA5713B62ADF5829DF17E4 /* Pods-ScanPluginIntegrationApp-dummy.m */,
+				226C77882F43C44B2D643316EC9FA942 /* Pods-ScanPluginIntegrationApp-frameworks.sh */,
+				6888A7A59F6B1D44CC4B159D06C8CFF8 /* Pods-ScanPluginIntegrationApp-Info.plist */,
+				E3DF700A220FFE698CF22D6DF5CCE9A9 /* Pods-ScanPluginIntegrationApp-umbrella.h */,
+				F2A44C8AAFBF7114E2007010DCDD86F8 /* Pods-ScanPluginIntegrationApp.debug.xcconfig */,
+				E04ABC99ECD6E4BB8FA316FF45CA6579 /* Pods-ScanPluginIntegrationApp.release.xcconfig */,
 			);
-			name = "Targets Support Files";
+			name = "Pods-ScanPluginIntegrationApp";
+			path = "Target Support Files/Pods-ScanPluginIntegrationApp";
 			sourceTree = "<group>";
 		};
 		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
@@ -137,8 +181,8 @@
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
 				6EF043A84F7ECFFE38CA928AB85BC26D /* Pods */,
-				E64F7AA0AB3296C5E60B7D134ED3D77D /* Products */,
-				7B64A08AC75C12C6AD0D507C8D1BD3DA /* Targets Support Files */,
+				DAE2796E19CFFA43CECCC1BB0686D444 /* Products */,
+				03859240C5E014FF890472B6A0AAE62D /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
@@ -150,9 +194,10 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		E64F7AA0AB3296C5E60B7D134ED3D77D /* Products */ = {
+		DAE2796E19CFFA43CECCC1BB0686D444 /* Products */ = {
 			isa = PBXGroup;
 			children = (
+				7D74CB6A4AD09E966745B71FB7033282 /* Pods_ScanditScanPlugin.framework */,
 				E1465CCA87DB82F620E211DE12F1AC70 /* Pods_ScanPluginIntegrationApp.framework */,
 			);
 			name = Products;
@@ -161,6 +206,14 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		692380AA400632DFE68BEE681BDF0E8D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACBE5988BBE8B5B36509D433F56F47B0 /* Pods-ScanditScanPlugin-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DDE6C5F10032E509442B41F7C28E9A15 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -191,6 +244,25 @@
 			productReference = E1465CCA87DB82F620E211DE12F1AC70 /* Pods_ScanPluginIntegrationApp.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		37EF633A078B7FB74D3C1CF43643EBB5 /* Pods-ScanditScanPlugin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3C2BEC2B24621899B09EE2ED2CDE0E80 /* Build configuration list for PBXNativeTarget "Pods-ScanditScanPlugin" */;
+			buildPhases = (
+				692380AA400632DFE68BEE681BDF0E8D /* Headers */,
+				A78748E2C45C7D43A4648D35A23456F8 /* Sources */,
+				CD010DD6F1093D2EAA03BE2A56E6412A /* Frameworks */,
+				1C1496EDB6DDB8801C3B258D1AB89B3B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9A03AA1B83A59F1F4CF6C00DF1F05CB4 /* PBXTargetDependency */,
+			);
+			name = "Pods-ScanditScanPlugin";
+			productName = "Pods-ScanditScanPlugin";
+			productReference = 7D74CB6A4AD09E966745B71FB7033282 /* Pods_ScanditScanPlugin.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -201,7 +273,7 @@
 				LastUpgradeCheck = 1100;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 10.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -209,10 +281,11 @@
 				Base,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = E64F7AA0AB3296C5E60B7D134ED3D77D /* Products */;
+			productRefGroup = DAE2796E19CFFA43CECCC1BB0686D444 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				37EF633A078B7FB74D3C1CF43643EBB5 /* Pods-ScanditScanPlugin */,
 				24C0285EF434EE6B7AF92CFDC543876C /* Pods-ScanPluginIntegrationApp */,
 				0EC587CF615156B5AAA458C3E5404B39 /* sonect-shop-sdk-ios */,
 			);
@@ -220,6 +293,13 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		1C1496EDB6DDB8801C3B258D1AB89B3B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		EB87A8C7627EABDB781AF4ED1E14C03B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -238,6 +318,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A78748E2C45C7D43A4648D35A23456F8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				74CE1055027EB97D4EF540F54FA6816D /* Pods-ScanditScanPlugin-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -247,9 +335,54 @@
 			target = 0EC587CF615156B5AAA458C3E5404B39 /* sonect-shop-sdk-ios */;
 			targetProxy = CC28E357D600158BA620E4208582DD5F /* PBXContainerItemProxy */;
 		};
+		9A03AA1B83A59F1F4CF6C00DF1F05CB4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "sonect-shop-sdk-ios";
+			target = 0EC587CF615156B5AAA458C3E5404B39 /* sonect-shop-sdk-ios */;
+			targetProxy = 1C5DD2BEC10F3B1387CAB440D8B2D8EA /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		0D24D49462DEFE756295C0807FE1505A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BAB0E33BCF0D32F1314747FDBBC611BD /* Pods-ScanditScanPlugin.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ScanditScanPlugin/Pods-ScanditScanPlugin-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ScanditScanPlugin/Pods-ScanditScanPlugin.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		2D5726A38D057CB550330196E518DA55 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0D7C20478B4DFBC1FAA607FCBDD43C60 /* sonect-shop-sdk-ios.xcconfig */;
@@ -270,7 +403,7 @@
 		};
 		7A16CE6C6A17C63B85C1EC807D767CA0 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 87143B65DE9A76C610A4387531BA961C /* Pods-ScanPluginIntegrationApp.release.xcconfig */;
+			baseConfigurationReference = E04ABC99ECD6E4BB8FA316FF45CA6579 /* Pods-ScanPluginIntegrationApp.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -306,6 +439,44 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
+		};
+		84B9248A64BC4FEC03CD639C6E371CC6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7A6E3E6D723B942DBACAFF5A06711B75 /* Pods-ScanditScanPlugin.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ScanditScanPlugin/Pods-ScanditScanPlugin-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ScanditScanPlugin/Pods-ScanditScanPlugin.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
 		};
 		939F1A8F6BCEB7F9F64D9EEE50CAE014 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -433,7 +604,7 @@
 		};
 		EE9B2806E789DC6B7E09A11EDD937AF1 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E4464A1DEF7AD368D79C713063F65B0C /* Pods-ScanPluginIntegrationApp.debug.xcconfig */;
+			baseConfigurationReference = F2A44C8AAFBF7114E2007010DCDD86F8 /* Pods-ScanPluginIntegrationApp.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -503,6 +674,15 @@
 			buildConfigurations = (
 				EE9B2806E789DC6B7E09A11EDD937AF1 /* Debug */,
 				7A16CE6C6A17C63B85C1EC807D767CA0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3C2BEC2B24621899B09EE2ED2CDE0E80 /* Build configuration list for PBXNativeTarget "Pods-ScanditScanPlugin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84B9248A64BC4FEC03CD639C6E371CC6 /* Debug */,
+				0D24D49462DEFE756295C0807FE1505A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
