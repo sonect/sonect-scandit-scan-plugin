@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		043372C823FD29E500034D01 /* SonectShop.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 043372C723FD29E500034D01 /* SonectShop.framework */; };
 		04DA17F923FC0C69002431AE /* ScanditScanPlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = 04DA17F723FC0C69002431AE /* ScanditScanPlugin.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		04DA180623FC0CA7002431AE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DA180523FC0CA7002431AE /* AppDelegate.swift */; };
 		04DA180823FC0CA7002431AE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DA180723FC0CA7002431AE /* SceneDelegate.swift */; };
@@ -21,11 +22,11 @@
 		04DA182623FC1619002431AE /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 04DA182523FC1619002431AE /* libz.tbd */; };
 		04DA182823FC1621002431AE /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 04DA182723FC1621002431AE /* libc++.tbd */; };
 		04DA182923FC493A002431AE /* ScanditScanPlugin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04DA17F423FC0C69002431AE /* ScanditScanPlugin.framework */; };
-		73128A30D928C3EE8D42D6B8 /* Pods_ScanditScanPlugin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41BDBF52821453FFE0EA904C /* Pods_ScanditScanPlugin.framework */; };
 		FCC126045A629D75C3748BBD /* Pods_ScanPluginIntegrationApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6D6B1438E2121580F468E70 /* Pods_ScanPluginIntegrationApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		043372C723FD29E500034D01 /* SonectShop.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SonectShop.framework; path = "Pods/sonect-shop-sdk-ios/SonectShop.framework"; sourceTree = "<group>"; };
 		04DA17F423FC0C69002431AE /* ScanditScanPlugin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ScanditScanPlugin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		04DA17F723FC0C69002431AE /* ScanditScanPlugin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScanditScanPlugin.h; sourceTree = "<group>"; };
 		04DA17F823FC0C69002431AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -59,7 +60,7 @@
 				04DA182823FC1621002431AE /* libc++.tbd in Frameworks */,
 				04DA182623FC1619002431AE /* libz.tbd in Frameworks */,
 				04DA182423FC1610002431AE /* libiconv.tbd in Frameworks */,
-				73128A30D928C3EE8D42D6B8 /* Pods_ScanditScanPlugin.framework in Frameworks */,
+				043372C823FD29E500034D01 /* SonectShop.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -147,6 +148,7 @@
 				04DA182723FC1621002431AE /* libc++.tbd */,
 				04DA182523FC1619002431AE /* libz.tbd */,
 				04DA182323FC1610002431AE /* libiconv.tbd */,
+				043372C723FD29E500034D01 /* SonectShop.framework */,
 				B6D6B1438E2121580F468E70 /* Pods_ScanPluginIntegrationApp.framework */,
 				41BDBF52821453FFE0EA904C /* Pods_ScanditScanPlugin.framework */,
 			);
@@ -499,6 +501,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Scandit",
+					"$(PROJECT_DIR)/Pods/sonect-shop-sdk-ios",
 				);
 				INFOPLIST_FILE = ScanditScanPlugin/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -531,6 +534,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Scandit",
+					"$(PROJECT_DIR)/Pods/sonect-shop-sdk-ios",
 				);
 				INFOPLIST_FILE = ScanditScanPlugin/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
