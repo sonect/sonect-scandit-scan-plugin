@@ -8,10 +8,14 @@
 
 #import "SNCScanditScanPlugin.h"
 #import <ScanditBarcodeScanner/ScanditBarcodeScanner.h>
+#import <SonectShop/SNCScanCodePlugin.h>
 
 @interface SNCScanditScanPlugin ()
 @property (nonatomic, strong) SBSBarcodePicker *picker;
 @property (nonatomic, copy) SNCScanCodeResultHandler resultHandler;
+@end
+
+@interface SNCScanditScanPlugin (Sonect) <SNCScanCodePlugin>
 @end
 
 @interface SNCScanditScanPlugin (Scandit) <SBSScanDelegate>
@@ -45,6 +49,10 @@
     [_picker switchTorchOn:NO];
     return _picker;
 }
+
+@end
+
+@implementation SNCScanditScanPlugin (Sonect)
 
 - (void)scan:(nonnull SNCScanCodeResultHandler)handler {
     self.resultHandler = handler;
