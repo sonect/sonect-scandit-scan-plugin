@@ -15,9 +15,6 @@
 @property (nonatomic, copy) SNCScanCodeResultHandler resultHandler;
 @end
 
-@interface SNCScanditScanPlugin (Sonect) <SNCScanCodePlugin>
-@end
-
 @interface SNCScanditScanPlugin (Scandit) <SBSScanDelegate>
 @end
 
@@ -49,10 +46,6 @@
     [_picker switchTorchOn:NO];
     return _picker;
 }
-
-@end
-
-@implementation SNCScanditScanPlugin (Sonect)
 
 - (void)scan:(nonnull SNCScanCodeResultHandler)handler {
     self.resultHandler = handler;
