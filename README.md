@@ -2,6 +2,8 @@
 
 This is a plugin repository to complement [Sonect Shop SDK](https://github.com/sonect/sonect-shop-sdk-ios)
 
+Contact support@sonect.ch if additional info is needed.
+
 ## Installation: 
 
 Via dependency managers:
@@ -10,4 +12,4 @@ Via dependency managers:
 - Manual: Get the [latest release](https://github.com/sonect/sonect-scandit-scan-plugin/releases/latest) and integrate it into your project. 
 
 To use this plugin, you will also need Scandit SDK and license. 
-Contact Sonect for further instructions. 
+Contact Sonect (support@sonect.ch) for further instructions. 
