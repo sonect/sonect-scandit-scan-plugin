@@ -22,7 +22,7 @@ Sonect, January 2020.
 			<key>License</key>
 			<string>Sonect Closed Source</string>
 			<key>Title</key>
-			<string>sonect-shop-sdk-ios</string>
+			<string>sonect-core-ios</string>
 			<key>Type</key>
 			<string>PSGroupSpecifier</string>
 		</dict>

@@ -1,7 +1,7 @@
 # Acknowledgements
 This application makes use of the following third party libraries:
 
-## sonect-shop-sdk-ios
+## sonect-core-ios
 
 Copyright (C) Sonect AG - All Rights Reserved
 Unauthorized copying of this file, and the Sonect SDK via any medium is strictly prohibited

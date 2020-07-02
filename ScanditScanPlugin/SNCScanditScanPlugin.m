@@ -8,7 +8,7 @@
 
 #import "SNCScanditScanPlugin.h"
 #import <ScanditBarcodeScanner/ScanditBarcodeScanner.h>
-#import <SonectShop/SNCScanCodePlugin.h>
+#import <SonectCore/SNCScanCodePlugin.h>
 
 @interface SNCScanditScanPlugin ()
 @property (nonatomic, strong) SBSBarcodePicker *picker;

@@ -8,6 +8,7 @@
 
 import UIKit
 import SonectShop
+import SonectCore
 import ScanditScanPlugin
 
 @UIApplicationMain
