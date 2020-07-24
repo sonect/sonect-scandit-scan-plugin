@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
 
     spec.name         = "sonect-scandit-scan-plugin"
-    spec.version      = "1.0.5"
+    spec.version      = "1.0.6"
     spec.summary      = "Sonect Scandit Scan Plugin"
     spec.description  = <<-DESC
     This is the Sonect Scandit Scan Plugin public podspec. 
