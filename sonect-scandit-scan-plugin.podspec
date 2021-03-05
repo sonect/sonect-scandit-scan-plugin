@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
 
     spec.name         = "sonect-scandit-scan-plugin"
-    spec.version      = "1.0.6"
+    spec.version      = "1.1.0"
     spec.summary      = "Sonect Scandit Scan Plugin"
     spec.description  = <<-DESC
     This is the Sonect Scandit Scan Plugin public podspec. 
@@ -17,8 +17,8 @@ Pod::Spec.new do |spec|
                  }
     spec.author             = { "sonect" => "marko.hlebar@sonect.ch" }
     spec.platform     = :ios, "9.0"
-    spec.source       = { :http => "https://github.com/sonect/sonect-scandit-scan-plugin/releases/download/#{spec.version}/SonectScanditScanPlugin_Cocoapods.framework.zip" }
-    spec.ios.vendored_frameworks = 'ScanditScanPlugin.framework'
+    spec.source       = { :http => "https://github.com/sonect/sonect-scandit-scan-plugin/releases/download/#{spec.version}/ScanditScanPlugin_Cocoapods.framework.zip" }
+    spec.ios.vendored_frameworks = 'ScanditScanPlugin.xcframework'
   
   end
   

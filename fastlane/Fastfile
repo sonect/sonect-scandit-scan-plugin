@@ -18,37 +18,39 @@ default_platform(:ios)
 platform :ios do
   desc "Makes a public distribution."
   lane :distribute do
-    carthage(
-      command: "build",
-      platform: "iOS",
-      no_skip_current: true)
+    public_release_sdk("ScanditScanPlugin")
+  end
 
-    carthage(
-      command: "archive",
-      frameworks: ["ScanditScanPlugin"],
-      output: "SonectScanditScanPlugin.framework.zip")
-
-    zip(
-      path: "Carthage/Build/iOS/ScanditScanPlugin.framework",
-      output_path: "SonectScanditScanPlugin_Cocoapods.framework.zip"
-    )
+  def public_release_sdk(sdk)
+    framework = get_sdk_target(sdk)
+    
+    cocoapods_archive = archive_framework_for_cocoapods(framework)
+    cathage_archive = archive_framework_for_carthage(framework)
 
     version = get_version_number(
-      target: "ScanditScanPlugin")
+      target: framework)
 
     name = "Release " + version
-    token = File.read("github.token")
+    repo = repo_for_framework(framework)
 
-    set_github_release(
-      tag_name: version,
-      name: name,
-      description: "No changelog provided",
-      repository_name: "sonect/sonect-scandit-scan-plugin",
-      api_token: token,
-      upload_assets: ["SonectScanditScanPlugin.framework.zip", "SonectScanditScanPlugin_Cocoapods.framework.zip"])
+    upload_to_github(
+      version, 
+      name,
+      "No changelog provided", 
+      repo,
+      [cocoapods_archive, cathage_archive]
+    )
 
-    commitAndPush("Update latest User Public build")
-  
+    message = "Update latest" + framework + " SDK build"
+    commit_and_push(message)
+  end
+
+  def repo_for_framework(framework)
+    return "sonect/sonect-scandit-scan-plugin"
+  end  
+
+  def get_sdk_target(sdk) 
+    return "ScanditScanPlugin"
   end
 
   def commitAndPush(message) 
@@ -58,5 +60,59 @@ platform :ios do
       local_branch: "master",
       remote_branch: "master")
   end
+
+  def archive_framework_for_cocoapods(framework) 
+    output_zip = framework + "Cocoapods.framework.zip"
+
+    framework_path = build_xcframework("Sonect")
+    archive(framework_path, output_zip)
+
+    return output_zip
+  end  
+
+  def archive_framework_for_carthage(framework)
+    carthage_build()
+
+    output_zip = framework + ".framework.zip"
+
+    carthage(
+      command: "archive",
+      frameworks: [framework],
+      output: output_zip)
+
+    return output_zip  
+  end
+
+  def carthage_build() 
+    carthage(
+      command: "build",
+      platform: "iOS",
+      no_skip_current: true)
+  end
+
+  def archive(src, dst)
+    src = "../" + src
+    dst = "../" + dst
+    sh("ditto", "-c", "-k", "--sequesterRsrc", "--keepParent", src, dst)
+  end
+
+  def upload_to_github(tag_name, name, description, repository_name, assets)
+    token = File.read("github.token")
+
+    set_github_release(
+      tag_name: tag_name,
+      name: name,
+      description: description,
+      repository_name: repository_name,
+      api_token: token,
+      upload_assets: assets)
+
+    delete_files(assets)
+  end
+
+  def delete_files(files) 
+    command = "cd .. && rm " + files.join(' ')
+    sh(command)
+  end 
 
 end
