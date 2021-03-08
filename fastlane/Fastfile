@@ -64,7 +64,7 @@ platform :ios do
   def archive_framework_for_cocoapods(framework) 
     output_zip = framework + "Cocoapods.framework.zip"
 
-    framework_path = build_xcframework("Sonect")
+    framework_path = build_xcframework(framework)
     archive(framework_path, output_zip)
 
     return output_zip
@@ -82,6 +82,21 @@ platform :ios do
 
     return output_zip  
   end
+
+  def build_xcframework(framework) 
+    output_dir = 'Build/XCFrameworks'
+
+    create_xcframework(
+      workspace: framework + '.xcworkspace',
+      scheme: framework,
+      destinations: ['iOS'],
+      xcframework_output_directory: output_dir,
+      include_dSYMs: true, 
+      include_BCSymbolMaps: true
+    )
+
+    return output_dir + "/" + framework + ".xcframework"
+  end  
 
   def carthage_build() 
     carthage(
@@ -107,7 +122,14 @@ platform :ios do
       api_token: token,
       upload_assets: assets)
 
+    pod_trunk_push()
+
     delete_files(assets)
+  end
+
+  def pod_trunk_push()
+    command = "cd .. && pod trunk push"
+    sh(command)
   end
 
   def delete_files(files) 
