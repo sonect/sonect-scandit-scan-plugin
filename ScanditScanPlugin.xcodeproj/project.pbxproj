@@ -489,6 +489,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1FA0E8CAC57F122C18D4486A /* Pods-ScanditScanPlugin.debug.xcconfig */;
 			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 8;
 				DEFINES_MODULE = YES;
@@ -522,6 +523,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 93DC59135C62B476655C7412 /* Pods-ScanditScanPlugin.release.xcconfig */;
 			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 8;
 				DEFINES_MODULE = YES;
