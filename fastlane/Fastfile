@@ -23,6 +23,5 @@ platform :ios do
                    "ScanditScanPlugin", 
                    "sonect/sonect-scandit-scan-plugin", 
                    "sonect-scandit-scan-plugin.podspec")
-
   end
 end
