@@ -28,5 +28,10 @@ FOUNDATION_EXPORT const unsigned char SonectCoreVersionString[];
 #import <SonectCore/SNCCalendarUtilities.h>
 
 #import <SonectCore/SNCLogging.h>
-#import <SonectCore/SNCLoggingSwift.h>
 #import <SonectCore/SonectDefines.h>
+
+#pragma mark - Categories
+
+#import <SonectCore/NSURLRequest+SNCCurlDescription.h>
+#import <SonectCore/NSJSONSerialization+SNCSDKRemovingNulls.h>
+

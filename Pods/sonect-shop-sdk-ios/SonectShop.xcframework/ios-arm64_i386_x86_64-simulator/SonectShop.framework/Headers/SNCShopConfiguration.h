@@ -10,14 +10,9 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface SNCShopConfiguration : NSObject
+@class SNCShopAttributes;
 
-/**
- Set allowed country codes.
- Example: would be US and Switzerland
- @[@1, @41]
- */
-@property (nonatomic, copy, readonly) NSArray <NSNumber *> *allowedCountryCodes;
+@interface SNCShopConfiguration : NSObject
 
 /**
  The user's preferred currency i.e. "CHF" for Swiss Francs
@@ -33,6 +28,11 @@ NS_ASSUME_NONNULL_BEGIN
  If YES, transaction id will be shown on confirmed receipts. Defaults to NO.
  */
 @property (nonatomic, readonly) BOOL shouldShowPaymentId;
+
+/**
+ Additional attributes that could be of variable nature.
+*/
+@property (nonatomic, strong, nullable) SNCShopAttributes *shopAttributes;
 
 /**
  Initializes the configuration with a designated configuration plist file.

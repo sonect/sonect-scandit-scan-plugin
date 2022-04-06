@@ -7,7 +7,7 @@ target 'ScanditScanPlugin' do
   use_frameworks!
 
   pod 'sonect-core-ios'
-
+  pod 'ScanditBarcodeCapture'
 end
 
 target 'ScanPluginIntegrationApp' do
@@ -16,5 +16,5 @@ target 'ScanPluginIntegrationApp' do
 
   pod 'sonect-shop-sdk-ios'
   pod 'sonect-core-ios'
-
+  pod 'ScanditBarcodeCapture'
 end

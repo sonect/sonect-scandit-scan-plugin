@@ -175,10 +175,14 @@ code_sign_if_enabled() {
 }
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_framework "${PODS_ROOT}/ScanditBarcodeCapture/ScanditBarcodeCapture.framework"
+  install_framework "${PODS_ROOT}/ScanditCaptureCore/ScanditCaptureCore.framework"
   install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/SonectCore/SonectCore.framework"
   install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/SonectShop/SonectShop.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_framework "${PODS_ROOT}/ScanditBarcodeCapture/ScanditBarcodeCapture.framework"
+  install_framework "${PODS_ROOT}/ScanditCaptureCore/ScanditCaptureCore.framework"
   install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/SonectCore/SonectCore.framework"
   install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/SonectShop/SonectShop.framework"
 fi
