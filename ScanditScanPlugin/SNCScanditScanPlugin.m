@@ -61,6 +61,11 @@
     return self.picker;
 }
 
+- (BOOL)toggleCameraFacingDirection {
+    SBSCameraFacingDirection desiredDirection = self.picker.cameraFacingDirection == SBSCameraFacingDirectionBack ? SBSCameraFacingDirectionFront : SBSCameraFacingDirectionBack;
+    return [self.picker changeToCameraFacing:desiredDirection];
+}
+
 @end
 
 @implementation SNCScanditScanPlugin (Scandit)

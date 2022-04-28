@@ -16,12 +16,12 @@
 		04DA181223FC0CA8002431AE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04DA181023FC0CA8002431AE /* LaunchScreen.storyboard */; };
 		04DA181923FC0E76002431AE /* SNCScanditScanPlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = 04DA181723FC0E76002431AE /* SNCScanditScanPlugin.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		04DA181A23FC0E76002431AE /* SNCScanditScanPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DA181823FC0E76002431AE /* SNCScanditScanPlugin.m */; };
-		04DA182223FC1130002431AE /* ScanditBarcodeScanner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04DA181F23FC10AD002431AE /* ScanditBarcodeScanner.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		04DA182423FC1610002431AE /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 04DA182323FC1610002431AE /* libiconv.tbd */; };
 		04DA182623FC1619002431AE /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 04DA182523FC1619002431AE /* libz.tbd */; };
 		04DA182823FC1621002431AE /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 04DA182723FC1621002431AE /* libc++.tbd */; };
 		04DA182923FC493A002431AE /* ScanditScanPlugin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04DA17F423FC0C69002431AE /* ScanditScanPlugin.framework */; };
 		51268B748D5B6EB912FA110D /* Pods_ScanditScanPlugin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41BDBF52821453FFE0EA904C /* Pods_ScanditScanPlugin.framework */; };
+		7FF7BB81281AC198007DA5E6 /* ScanditBarcodeScanner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FF7BB7F281AC197007DA5E6 /* ScanditBarcodeScanner.framework */; };
 		FCC126045A629D75C3748BBD /* Pods_ScanPluginIntegrationApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6D6B1438E2121580F468E70 /* Pods_ScanPluginIntegrationApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -40,13 +40,13 @@
 		04DA181323FC0CA8002431AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		04DA181723FC0E76002431AE /* SNCScanditScanPlugin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SNCScanditScanPlugin.h; sourceTree = "<group>"; };
 		04DA181823FC0E76002431AE /* SNCScanditScanPlugin.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SNCScanditScanPlugin.m; sourceTree = "<group>"; };
-		04DA181F23FC10AD002431AE /* ScanditBarcodeScanner.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ScanditBarcodeScanner.framework; sourceTree = "<group>"; };
 		04DA182323FC1610002431AE /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/libiconv.tbd; sourceTree = DEVELOPER_DIR; };
 		04DA182523FC1619002431AE /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/libz.tbd; sourceTree = DEVELOPER_DIR; };
 		04DA182723FC1621002431AE /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/libc++.tbd"; sourceTree = DEVELOPER_DIR; };
 		1FA0E8CAC57F122C18D4486A /* Pods-ScanditScanPlugin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScanditScanPlugin.debug.xcconfig"; path = "Target Support Files/Pods-ScanditScanPlugin/Pods-ScanditScanPlugin.debug.xcconfig"; sourceTree = "<group>"; };
 		41BDBF52821453FFE0EA904C /* Pods_ScanditScanPlugin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ScanditScanPlugin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		63EB599E7D66312CBBE40988 /* Pods-ScanPluginIntegrationApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScanPluginIntegrationApp.debug.xcconfig"; path = "Target Support Files/Pods-ScanPluginIntegrationApp/Pods-ScanPluginIntegrationApp.debug.xcconfig"; sourceTree = "<group>"; };
+		7FF7BB7F281AC197007DA5E6 /* ScanditBarcodeScanner.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ScanditBarcodeScanner.framework; sourceTree = "<group>"; };
 		93DC59135C62B476655C7412 /* Pods-ScanditScanPlugin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScanditScanPlugin.release.xcconfig"; path = "Target Support Files/Pods-ScanditScanPlugin/Pods-ScanditScanPlugin.release.xcconfig"; sourceTree = "<group>"; };
 		B6D6B1438E2121580F468E70 /* Pods_ScanPluginIntegrationApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ScanPluginIntegrationApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3C340FD2D04993FE0C7130F /* Pods-ScanPluginIntegrationApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScanPluginIntegrationApp.release.xcconfig"; path = "Target Support Files/Pods-ScanPluginIntegrationApp/Pods-ScanPluginIntegrationApp.release.xcconfig"; sourceTree = "<group>"; };
@@ -61,6 +61,7 @@
 				04DA182623FC1619002431AE /* libz.tbd in Frameworks */,
 				04DA182423FC1610002431AE /* libiconv.tbd in Frameworks */,
 				51268B748D5B6EB912FA110D /* Pods_ScanditScanPlugin.framework in Frameworks */,
+				7FF7BB81281AC198007DA5E6 /* ScanditBarcodeScanner.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,7 +69,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04DA182223FC1130002431AE /* ScanditBarcodeScanner.framework in Frameworks */,
 				FCC126045A629D75C3748BBD /* Pods_ScanPluginIntegrationApp.framework in Frameworks */,
 				04DA182923FC493A002431AE /* ScanditScanPlugin.framework in Frameworks */,
 			);
@@ -80,7 +80,7 @@
 		04DA17EA23FC0C69002431AE = {
 			isa = PBXGroup;
 			children = (
-				04DA181E23FC1067002431AE /* Scandit */,
+				7FF7BB7D281AC197007DA5E6 /* Scandit */,
 				04DA17F623FC0C69002431AE /* ScanditScanPlugin */,
 				04DA180423FC0CA7002431AE /* ScanPluginIntegrationApp */,
 				04DA17F523FC0C69002431AE /* Products */,
@@ -123,14 +123,6 @@
 			path = ScanPluginIntegrationApp;
 			sourceTree = "<group>";
 		};
-		04DA181E23FC1067002431AE /* Scandit */ = {
-			isa = PBXGroup;
-			children = (
-				04DA181F23FC10AD002431AE /* ScanditBarcodeScanner.framework */,
-			);
-			path = Scandit;
-			sourceTree = "<group>";
-		};
 		1DFA6DBE9488BC73E026B098 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -140,6 +132,14 @@
 				93DC59135C62B476655C7412 /* Pods-ScanditScanPlugin.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		7FF7BB7D281AC197007DA5E6 /* Scandit */ = {
+			isa = PBXGroup;
+			children = (
+				7FF7BB7F281AC197007DA5E6 /* ScanditBarcodeScanner.framework */,
+			);
+			path = Scandit;
 			sourceTree = "<group>";
 		};
 		F2F896A0A718E76A1080C193 /* Frameworks */ = {
