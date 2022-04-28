@@ -24,8 +24,11 @@ FOUNDATION_EXPORT const unsigned char SonectShopVersionString[];
 #import <SonectShop/SNCSonectShopEventHandler.h>
 #import <SonectShop/SNCAnalytics.h>
 #import <SonectShop/SNCShopPresentationDelegate.h>
+#import <SonectShop/SNCShopAttributes.h>
 
 // Data source
 #import <SonectShop/SNCShopOnboardingDataSource.h>
 #import <SonectShop/SNCAccountDetails.h>
 #import <SonectShop/SNCAddress.h>
+
+
