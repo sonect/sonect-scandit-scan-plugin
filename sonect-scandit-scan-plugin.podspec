@@ -18,6 +18,7 @@ Pod::Spec.new do |spec|
     spec.author             = { "sonect" => "marko.hlebar@sonect.ch" }
     
     spec.platform     = :ios, "9.0"
+    spec.vendored_frameworks = "Scandit/ScanditBarcodeScanner.framework"
     spec.source       = { :git => "https://github.com/sonect/sonect-scandit-scan-plugin.git", :tag => spec.version }
     spec.source_files       = 'ScanditScanPlugin/*.m', 'ScanditScanPlugin/*.h', 'Scandit/*.framework', 'ScanditScanPlugin/Classes/*.swift'
     spec.swift_version = '5.0'
