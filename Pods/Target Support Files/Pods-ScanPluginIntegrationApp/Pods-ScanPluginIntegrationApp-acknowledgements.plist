@@ -14,6 +14,26 @@
 		</dict>
 		<dict>
 			<key>FooterText</key>
+			<string>Copyright 2019- Scandit</string>
+			<key>License</key>
+			<string>Commercial</string>
+			<key>Title</key>
+			<string>ScanditBarcodeCapture</string>
+			<key>Type</key>
+			<string>PSGroupSpecifier</string>
+		</dict>
+		<dict>
+			<key>FooterText</key>
+			<string>Copyright 2019- Scandit</string>
+			<key>License</key>
+			<string>Commercial</string>
+			<key>Title</key>
+			<string>ScanditCaptureCore</string>
+			<key>Type</key>
+			<string>PSGroupSpecifier</string>
+		</dict>
+		<dict>
+			<key>FooterText</key>
 			<string>Copyright (C) Sonect AG - All Rights Reserved
 Unauthorized copying of this file, and the Sonect SDK via any medium is strictly prohibited
 Proprietary and confidential

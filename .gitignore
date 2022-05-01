@@ -25,5 +25,8 @@ DerivedData/
 ## Gcc Patch
 /*.gcno
 
+## Scandit
+ScanditBarcodeScanner.framework
+
 ## Github
 github.token

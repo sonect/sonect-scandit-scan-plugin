@@ -1,3 +1,5 @@
 ${PODS_ROOT}/Target Support Files/Pods-ScanPluginIntegrationApp/Pods-ScanPluginIntegrationApp-frameworks.sh
+${PODS_ROOT}/ScanditBarcodeCapture/ScanditBarcodeCapture.framework
+${PODS_ROOT}/ScanditCaptureCore/ScanditCaptureCore.framework
 ${PODS_XCFRAMEWORKS_BUILD_DIR}/SonectCore/SonectCore.framework/SonectCore
 ${PODS_XCFRAMEWORKS_BUILD_DIR}/SonectShop/SonectShop.framework/SonectShop

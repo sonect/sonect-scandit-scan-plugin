@@ -7,15 +7,20 @@
 //
 
 #import "SNCScanditScanPlugin.h"
-#import <ScanditBarcodeScanner/ScanditBarcodeScanner.h>
+#import <ScanditCaptureCore/ScanditCaptureCore.h>
+#import <ScanditBarcodeCapture/ScanditBarcodeCapture.h>
 #import <SonectCore/SNCScanCodePlugin.h>
+#import "SNCScanditScanViewController.h"
 
 @interface SNCScanditScanPlugin ()
-@property (nonatomic, strong) SBSBarcodePicker *picker;
 @property (nonatomic, copy) SNCScanCodeResultHandler resultHandler;
+@property (nonatomic, strong) SDCDataCaptureContext *context;
+@property (nonatomic, strong) SNCScanditScanViewController *scanditPluginViewController;
+@property (nonatomic, strong, nullable) SDCCamera *camera;
+@property (nonatomic, strong) SDCBarcodeCapture *barcodeCapture;
 @end
 
-@interface SNCScanditScanPlugin (Scandit) <SBSScanDelegate>
+@interface SNCScanditScanPlugin (Scandit) <SDCBarcodeCaptureListener>
 @end
 
 @implementation SNCScanditScanPlugin
@@ -23,61 +28,84 @@
 - (instancetype)initWithLicenseKey:(NSString *)licenseKey {
     self = [super init];
     if (self) {
-        [SBSLicense setAppKey:licenseKey];
+        self.context = [SDCDataCaptureContext contextForLicenseKey:licenseKey];
+        [self setupBarcodeCapture];
     }
     return self;
 }
 
-- (SBSBarcodePicker *)picker {
-    if (_picker) { return _picker; }
+- (SNCScanditScanViewController *)scanditPluginViewController {
+    if (!_scanditPluginViewController) {
+        _scanditPluginViewController = [[SNCScanditScanViewController alloc] initWithContext:self.context barcodeCapture:self.barcodeCapture];
+    }
     
-    SBSScanSettings *scanSettings = [SBSScanSettings defaultSettings];
-    scanSettings.cameraFacingPreference = SBSCameraFacingDirectionBack;
-    [scanSettings setSymbology:SBSSymbologyQR enabled:YES];
-    [scanSettings setSymbology:SBSSymbologyCode128 enabled:YES];
+    return _scanditPluginViewController;
+}
+
+- (SDCBarcodeCaptureSettings *)settings {
+    SDCBarcodeCaptureSettings *settings = [SDCBarcodeCaptureSettings settings];
+    [settings setSymbology:SDCSymbologyQR enabled:YES];
+    [settings setSymbology:SDCSymbologyCode128 enabled:YES];
     
-    SBSSymbologySettings *symSettings = [scanSettings settingsForSymbology:SBSSymbologyCode128];
+    return settings;
+}
+
+- (void)setupBarcodeCapture {
+    self.barcodeCapture = [SDCBarcodeCapture barcodeCaptureWithContext:self.context settings:self.settings];
+    [self.barcodeCapture addListener:self];
+    [self setupCamera:SDCCameraPositionWorldFacing];
+}
+
+- (void)setupCamera:(SDCCameraPosition)cameraPosition {
+    if (self.camera) {
+        [self.camera switchToDesiredState:SDCFrameSourceStateOff];
+    }
     
-    NSArray *activeSymbols = @[@7, @8, @9, @10, @11, @12, @13, @14, @15, @16, @17, @18, @19, @20, @22, @23, @24, @25, @26, @27, @28, @29, @30, @31, @32, @33, @34, @35, @36, @37, @38, @39, @40, @41, @42, @43, @44, @45, @46, @47, @48, @49, @50];
-    [symSettings setActiveSymbolCounts:[NSSet setWithArray:activeSymbols]];
+    SDCCameraSettings *cameraSettings = SDCBarcodeCapture.recommendedCameraSettings;
     
-    _picker = [[SBSBarcodePicker alloc] initWithSettings:scanSettings];
-    _picker.scanDelegate = self;
-    [_picker switchTorchOn:NO];
-    return _picker;
+    self.camera = [SDCCamera cameraAtPosition:cameraPosition];
+    [self.camera applySettings:cameraSettings completionHandler:nil];
+    [self.context setFrameSource:self.camera completionHandler:nil];
+    
+    [self.camera switchToDesiredState:SDCFrameSourceStateOn];
 }
 
 - (void)scan:(nonnull SNCScanCodeResultHandler)handler {
     self.resultHandler = handler;
-    [self.picker startScanning];
+    self.barcodeCapture.enabled = YES;
+    [self.camera switchToDesiredState:SDCFrameSourceStateOn];
 }
 
 - (void)stop {
     self.resultHandler = nil;
-    [self.picker stopScanning];
+    self.barcodeCapture.enabled = NO;
+    [self.camera switchToDesiredState:SDCFrameSourceStateOff];
 }
 
 - (nonnull UIViewController *)viewController {
-    return self.picker;
+    return self.scanditPluginViewController;
 }
 
 - (BOOL)toggleCameraFacingDirection {
-    SBSCameraFacingDirection desiredDirection = self.picker.cameraFacingDirection == SBSCameraFacingDirectionBack ? SBSCameraFacingDirectionFront : SBSCameraFacingDirectionBack;
-    return [self.picker changeToCameraFacing:desiredDirection];
+    SDCCameraPosition desiredCameraPosition = self.camera.position == SDCCameraPositionWorldFacing ? SDCCameraPositionUserFacing : SDCCameraPositionWorldFacing;
+    
+    [self setupCamera:desiredCameraPosition];
+
+    return YES;
 }
 
 @end
 
 @implementation SNCScanditScanPlugin (Scandit)
 
-- (void)barcodePicker:(nonnull SBSBarcodePicker*)picker didScan:(nonnull SBSScanSession*)session {
-    SBSCode *code = session.allRecognizedCodes.lastObject;
-    NSString *value = code.data;
+- (void)barcodeCapture:(SDCBarcodeCapture *)barcodeCapture didScanInSession:(SDCBarcodeCaptureSession *)session frameData:(id<SDCFrameData>)frameData {
+    SDCBarcode *barcode = [session.newlyRecognizedBarcodes firstObject];
+      if (barcode == nil || barcode.data == nil) {
+          return;
+      }
     
-    if (!value) {
-        return;
-    }
-    
+    NSString *value = barcode.data;
+
     self.resultHandler(value, nil);
 }
 
