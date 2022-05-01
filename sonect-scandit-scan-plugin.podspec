@@ -16,9 +16,18 @@ Pod::Spec.new do |spec|
                       LICENSE
                  }
     spec.author             = { "sonect" => "marko.hlebar@sonect.ch" }
+    
     spec.platform     = :ios, "9.0"
-    spec.source       = { :http => "https://github.com/sonect/sonect-scandit-scan-plugin/releases/download/#{spec.version}/ScanditScanPlugin_Cocoapods.framework.zip" }
-    spec.ios.vendored_frameworks = 'ScanditScanPlugin.xcframework'
-  
+    spec.vendored_frameworks = "Scandit/ScanditBarcodeScanner.framework"
+    spec.source       = { :git => "https://github.com/sonect/sonect-scandit-scan-plugin.git", :tag => spec.version }
+    spec.source_files       = 'ScanditScanPlugin/*.m', 'ScanditScanPlugin/*.h', 'Scandit/*.framework', 'ScanditScanPlugin/Classes/*.swift'
+    spec.swift_version = '5.0'
+
+    spec.dependency 'sonect-core-ios'
+
+    #this don't pass pod lib lint until this is fixed
+    spec.pod_target_xcconfig = { 'BUILD_LIBRARY_FOR_DISTRIBUTION' => 'YES' }
+
+
   end
   
