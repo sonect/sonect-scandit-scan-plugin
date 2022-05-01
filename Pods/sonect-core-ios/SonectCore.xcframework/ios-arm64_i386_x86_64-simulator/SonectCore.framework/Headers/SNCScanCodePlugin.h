@@ -16,6 +16,10 @@ typedef void(^SNCScanCodeResultHandler)(NSString * _Nullable scanResult, NSError
 - (UIViewController *)viewController;
 - (void)scan:(SNCScanCodeResultHandler)handler;
 - (void)stop;
+
+@optional
+- (BOOL)toggleCameraFacingDirection;
+
 @end
 
 NS_ASSUME_NONNULL_END

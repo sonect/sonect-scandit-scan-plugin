@@ -2,7 +2,7 @@ PODS:
   - ScanditBarcodeCapture (6.5.3):
     - ScanditCaptureCore (= 6.5.3)
   - ScanditCaptureCore (6.5.3)
-  - sonect-core-ios (1.5.0)
+  - sonect-core-ios (1.5.2)
   - sonect-shop-sdk-ios (1.20.0):
     - sonect-core-ios (~> 1.5.0)
 
@@ -21,7 +21,7 @@ SPEC REPOS:
 SPEC CHECKSUMS:
   ScanditBarcodeCapture: 5c03438c43ef43d398501e8a7b96db6f0dfd6bfc
   ScanditCaptureCore: 86891067187c554f1f9a396d709ea4d98156127f
-  sonect-core-ios: 481c46bc3c6f701e53f6780191618de968697100
+  sonect-core-ios: da5b204bdf8030b6754e2daed4a16331fd224e26
   sonect-shop-sdk-ios: c6da2e4bd40ed84cc68bf8482be0c923c106ebb7
 
 PODFILE CHECKSUM: 73c6ed9f9168dcef52b75c42b19b6249c3f6df2c
