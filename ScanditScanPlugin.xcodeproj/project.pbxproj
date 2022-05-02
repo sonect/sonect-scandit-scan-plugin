@@ -19,13 +19,13 @@
 		04DA182423FC1610002431AE /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 04DA182323FC1610002431AE /* libiconv.tbd */; };
 		04DA182623FC1619002431AE /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 04DA182523FC1619002431AE /* libz.tbd */; };
 		04DA182823FC1621002431AE /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 04DA182723FC1621002431AE /* libc++.tbd */; };
-		51268B748D5B6EB912FA110D /* Pods_ScanditScanPlugin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41BDBF52821453FFE0EA904C /* Pods_ScanditScanPlugin.framework */; };
+		460739342CB316A2E7F9891F /* Pods_ScanditScanPlugin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 724F290A70F2D06ABEAF09D2 /* Pods_ScanditScanPlugin.framework */; };
+		57F725903B539358E88DFD49 /* Pods_ScanPluginIntegrationApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEFBD8C48CC298DEC13D05BD /* Pods_ScanPluginIntegrationApp.framework */; };
 		7FD2D58927FC86450052403F /* SNCScanditScanViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 7FD2D58627FC86450052403F /* SNCScanditScanViewController.h */; };
 		7FD2D58A27FC86450052403F /* SNCScanditScanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FD2D58727FC86450052403F /* SNCScanditScanViewController.m */; };
 		7FD2D58B27FC86450052403F /* SNCScanditScanViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7FD2D58827FC86450052403F /* SNCScanditScanViewController.xib */; };
 		7FD2D58C27FC91DB0052403F /* ScanditScanPlugin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04DA17F423FC0C69002431AE /* ScanditScanPlugin.framework */; platformFilter = ios; };
 		7FD2D58D27FC91DB0052403F /* ScanditScanPlugin.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 04DA17F423FC0C69002431AE /* ScanditScanPlugin.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		FCC126045A629D75C3748BBD /* Pods_ScanPluginIntegrationApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6D6B1438E2121580F468E70 /* Pods_ScanPluginIntegrationApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,15 +70,15 @@
 		04DA182323FC1610002431AE /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/libiconv.tbd; sourceTree = DEVELOPER_DIR; };
 		04DA182523FC1619002431AE /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/libz.tbd; sourceTree = DEVELOPER_DIR; };
 		04DA182723FC1621002431AE /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/libc++.tbd"; sourceTree = DEVELOPER_DIR; };
-		1FA0E8CAC57F122C18D4486A /* Pods-ScanditScanPlugin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScanditScanPlugin.debug.xcconfig"; path = "Target Support Files/Pods-ScanditScanPlugin/Pods-ScanditScanPlugin.debug.xcconfig"; sourceTree = "<group>"; };
-		41BDBF52821453FFE0EA904C /* Pods_ScanditScanPlugin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ScanditScanPlugin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		63EB599E7D66312CBBE40988 /* Pods-ScanPluginIntegrationApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScanPluginIntegrationApp.debug.xcconfig"; path = "Target Support Files/Pods-ScanPluginIntegrationApp/Pods-ScanPluginIntegrationApp.debug.xcconfig"; sourceTree = "<group>"; };
+		08EDB905AC40788E32354B64 /* Pods-ScanPluginIntegrationApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScanPluginIntegrationApp.debug.xcconfig"; path = "Target Support Files/Pods-ScanPluginIntegrationApp/Pods-ScanPluginIntegrationApp.debug.xcconfig"; sourceTree = "<group>"; };
+		724F290A70F2D06ABEAF09D2 /* Pods_ScanditScanPlugin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ScanditScanPlugin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FD2D58627FC86450052403F /* SNCScanditScanViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SNCScanditScanViewController.h; sourceTree = "<group>"; };
 		7FD2D58727FC86450052403F /* SNCScanditScanViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SNCScanditScanViewController.m; sourceTree = "<group>"; };
 		7FD2D58827FC86450052403F /* SNCScanditScanViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SNCScanditScanViewController.xib; sourceTree = "<group>"; };
-		93DC59135C62B476655C7412 /* Pods-ScanditScanPlugin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScanditScanPlugin.release.xcconfig"; path = "Target Support Files/Pods-ScanditScanPlugin/Pods-ScanditScanPlugin.release.xcconfig"; sourceTree = "<group>"; };
-		B6D6B1438E2121580F468E70 /* Pods_ScanPluginIntegrationApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ScanPluginIntegrationApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E3C340FD2D04993FE0C7130F /* Pods-ScanPluginIntegrationApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScanPluginIntegrationApp.release.xcconfig"; path = "Target Support Files/Pods-ScanPluginIntegrationApp/Pods-ScanPluginIntegrationApp.release.xcconfig"; sourceTree = "<group>"; };
+		83A9D887B62282F6ABF08873 /* Pods-ScanditScanPlugin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScanditScanPlugin.debug.xcconfig"; path = "Target Support Files/Pods-ScanditScanPlugin/Pods-ScanditScanPlugin.debug.xcconfig"; sourceTree = "<group>"; };
+		AEFBD8C48CC298DEC13D05BD /* Pods_ScanPluginIntegrationApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ScanPluginIntegrationApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B20A82D47D6F2ECBAA068313 /* Pods-ScanPluginIntegrationApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScanPluginIntegrationApp.release.xcconfig"; path = "Target Support Files/Pods-ScanPluginIntegrationApp/Pods-ScanPluginIntegrationApp.release.xcconfig"; sourceTree = "<group>"; };
+		E843CB0065DB0300438FBCE8 /* Pods-ScanditScanPlugin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScanditScanPlugin.release.xcconfig"; path = "Target Support Files/Pods-ScanditScanPlugin/Pods-ScanditScanPlugin.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,7 +89,7 @@
 				04DA182823FC1621002431AE /* libc++.tbd in Frameworks */,
 				04DA182623FC1619002431AE /* libz.tbd in Frameworks */,
 				04DA182423FC1610002431AE /* libiconv.tbd in Frameworks */,
-				51268B748D5B6EB912FA110D /* Pods_ScanditScanPlugin.framework in Frameworks */,
+				460739342CB316A2E7F9891F /* Pods_ScanditScanPlugin.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,8 +97,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FCC126045A629D75C3748BBD /* Pods_ScanPluginIntegrationApp.framework in Frameworks */,
 				7FD2D58C27FC91DB0052403F /* ScanditScanPlugin.framework in Frameworks */,
+				57F725903B539358E88DFD49 /* Pods_ScanPluginIntegrationApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -156,10 +156,10 @@
 		1DFA6DBE9488BC73E026B098 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				63EB599E7D66312CBBE40988 /* Pods-ScanPluginIntegrationApp.debug.xcconfig */,
-				E3C340FD2D04993FE0C7130F /* Pods-ScanPluginIntegrationApp.release.xcconfig */,
-				1FA0E8CAC57F122C18D4486A /* Pods-ScanditScanPlugin.debug.xcconfig */,
-				93DC59135C62B476655C7412 /* Pods-ScanditScanPlugin.release.xcconfig */,
+				08EDB905AC40788E32354B64 /* Pods-ScanPluginIntegrationApp.debug.xcconfig */,
+				B20A82D47D6F2ECBAA068313 /* Pods-ScanPluginIntegrationApp.release.xcconfig */,
+				83A9D887B62282F6ABF08873 /* Pods-ScanditScanPlugin.debug.xcconfig */,
+				E843CB0065DB0300438FBCE8 /* Pods-ScanditScanPlugin.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -171,8 +171,8 @@
 				04DA182523FC1619002431AE /* libz.tbd */,
 				04DA182323FC1610002431AE /* libiconv.tbd */,
 				043372C723FD29E500034D01 /* SonectShop.framework */,
-				B6D6B1438E2121580F468E70 /* Pods_ScanPluginIntegrationApp.framework */,
-				41BDBF52821453FFE0EA904C /* Pods_ScanditScanPlugin.framework */,
+				AEFBD8C48CC298DEC13D05BD /* Pods_ScanPluginIntegrationApp.framework */,
+				724F290A70F2D06ABEAF09D2 /* Pods_ScanditScanPlugin.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -197,7 +197,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 04DA17FC23FC0C69002431AE /* Build configuration list for PBXNativeTarget "ScanditScanPlugin" */;
 			buildPhases = (
-				B59AFB53BDDC31E557A2F6E4 /* [CP] Check Pods Manifest.lock */,
+				3A2FA280F0EECC3539BB9BCB /* [CP] Check Pods Manifest.lock */,
 				04DA17EF23FC0C69002431AE /* Headers */,
 				04DA17F023FC0C69002431AE /* Sources */,
 				04DA17F123FC0C69002431AE /* Frameworks */,
@@ -216,12 +216,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 04DA181423FC0CA8002431AE /* Build configuration list for PBXNativeTarget "ScanPluginIntegrationApp" */;
 			buildPhases = (
-				FE80BF95E494CACE96E1F8CB /* [CP] Check Pods Manifest.lock */,
+				CEB68DC15D39DA7D700FC60D /* [CP] Check Pods Manifest.lock */,
 				04DA17FF23FC0CA7002431AE /* Sources */,
 				04DA180023FC0CA7002431AE /* Frameworks */,
 				04DA180123FC0CA7002431AE /* Resources */,
-				4858B6FDC7476D2981F09DAB /* [CP] Embed Pods Frameworks */,
 				7FD2D59027FC91DC0052403F /* Embed Frameworks */,
+				1F7534A48DBD4C6978B8AF5B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -292,7 +292,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		4858B6FDC7476D2981F09DAB /* [CP] Embed Pods Frameworks */ = {
+		1F7534A48DBD4C6978B8AF5B /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -309,7 +309,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ScanPluginIntegrationApp/Pods-ScanPluginIntegrationApp-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		B59AFB53BDDC31E557A2F6E4 /* [CP] Check Pods Manifest.lock */ = {
+		3A2FA280F0EECC3539BB9BCB /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -331,7 +331,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		FE80BF95E494CACE96E1F8CB /* [CP] Check Pods Manifest.lock */ = {
+		CEB68DC15D39DA7D700FC60D /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -525,7 +525,7 @@
 		};
 		04DA17FD23FC0C69002431AE /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1FA0E8CAC57F122C18D4486A /* Pods-ScanditScanPlugin.debug.xcconfig */;
+			baseConfigurationReference = 83A9D887B62282F6ABF08873 /* Pods-ScanditScanPlugin.debug.xcconfig */;
 			buildSettings = {
 				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -559,7 +559,7 @@
 		};
 		04DA17FE23FC0C69002431AE /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 93DC59135C62B476655C7412 /* Pods-ScanditScanPlugin.release.xcconfig */;
+			baseConfigurationReference = E843CB0065DB0300438FBCE8 /* Pods-ScanditScanPlugin.release.xcconfig */;
 			buildSettings = {
 				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -593,7 +593,7 @@
 		};
 		04DA181523FC0CA8002431AE /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 63EB599E7D66312CBBE40988 /* Pods-ScanPluginIntegrationApp.debug.xcconfig */;
+			baseConfigurationReference = 08EDB905AC40788E32354B64 /* Pods-ScanPluginIntegrationApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -618,7 +618,7 @@
 		};
 		04DA181623FC0CA8002431AE /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E3C340FD2D04993FE0C7130F /* Pods-ScanPluginIntegrationApp.release.xcconfig */;
+			baseConfigurationReference = B20A82D47D6F2ECBAA068313 /* Pods-ScanPluginIntegrationApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
