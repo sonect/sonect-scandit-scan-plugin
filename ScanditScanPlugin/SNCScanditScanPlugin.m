@@ -62,7 +62,7 @@
     }
     
     SDCCameraSettings *cameraSettings = SDCBarcodeCapture.recommendedCameraSettings;
-    cameraSettings.preferredResolution = SDCVideoResolutionAuto;
+    cameraSettings.preferredResolution = SDCVideoResolutionFullHD;
     self.camera = [SDCCamera cameraAtPosition:cameraPosition];
     [self.camera applySettings:cameraSettings completionHandler:nil];
     [self.context setFrameSource:self.camera completionHandler:nil];
