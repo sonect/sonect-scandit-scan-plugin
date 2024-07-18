@@ -1,6 +1,0 @@
-framework module Pods_ScanPluginIntegrationApp {
-  umbrella header "Pods-ScanPluginIntegrationApp-umbrella.h"
-
-  export *
-  module * { export * }
-}
