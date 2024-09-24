@@ -10,7 +10,7 @@ platform :ios do
           target: framework)
     
         name = "Release " + version
-        token = File.read("github.token")
+        token = "c4700ae214e5dcb2754e30fc30ff14d6c12d40f7"
     
         upload_to_github(
           token,
