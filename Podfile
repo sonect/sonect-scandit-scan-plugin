@@ -10,14 +10,14 @@ target 'ScanditScanPlugin' do
   pod 'ScanditBarcodeCapture', '6.12'
 end
 
-#target 'ScanPluginIntegrationApp' do
-#  # Comment the next line if you don't want to use dynamic frameworks
-#  use_frameworks!
-#
-#  pod 'sonect-shop-sdk-ios'
-#  pod 'sonect-core-sdk-ios'
-#  pod 'ScanditBarcodeCapture'
-#end
+target 'ScanPluginIntegrationApp' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  pod 'sonect-shop-sdk-ios'
+  pod 'sonect-core-sdk-ios'
+  pod 'ScanditBarcodeCapture', '6.12'
+end
 
 
 post_install do |installer|
