@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
 
     spec.name         = "SonectScanditScanPlugin"
-    spec.version      = "1.2.4"
+    spec.version      = "1.2.7"
     spec.summary      = "Sonect Scandit Scan Plugin"
     spec.description  = <<-DESC
     This is the Sonect Scandit Scan Plugin public podspec. 
@@ -22,7 +22,7 @@ Pod::Spec.new do |spec|
     spec.source_files       = 'ScanditScanPlugin/*.m', 'ScanditScanPlugin/*.h', 'Scandit/*.framework', 'ScanditScanPlugin/Classes/*.swift'
     spec.swift_version = '5.0'
 
-    spec.dependency 'sonect-core-ios'
+    spec.dependency 'sonect-core-sdk-ios'
     spec.dependency 'ScanditBarcodeCapture'
 
     #this don't pass pod lib lint until this is fixed
